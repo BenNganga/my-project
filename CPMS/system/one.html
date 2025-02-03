@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thika Road Mall - Car Park Management</title>
+    <link rel="stylesheet" href="one.css">
+</head>
+<body>
+    <h1>Thika Road Mall - Car Park Management</h1>
+    <div class="card">
+        <p id="plateNumber" class="input">License Plate: Capturing...</p>
+        <button class="button" onclick="generateTicket()">Generate Ticket</button>
+    </div>
+    <div id="ticketDetails" class="card" style="display: none;"></div>
+    <h2>Parking Records</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>License Plate</th>
+                <th>Ticket Number</th>
+                <th>Parking Spot</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="parkingRecords"></tbody>
+    </table>
+    <script src="one.js"></script>
+</body>
+</html>
